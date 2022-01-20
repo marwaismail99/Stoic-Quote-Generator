@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Quattrocento&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Quattrocento", serif;
+}
+
+:root {
+  --primary-colour: rgb(0, 0, 0);
+  --secondary-colour: rgb(255, 255, 255);
+}
+
+body {
+  background: rgb(209, 255, 230);
+  background: radial-gradient(
+    circle,
+    rgba(209, 255, 230, 1) 0%,
+    rgba(156, 230, 218, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0.6);
+  border-radius: 10px;
+  width: 600px;
+  background-color: rgb(10, 186, 181);
+  opacity: 0.4;
+  margin: 10px;
+}
+
+.quote {
+  text-align: center;
+  color: var(--primary-colour);
+}
+
+.author {
+  color: var(--secondary-colour);
+  font-size: 25px;
+}
+
+hr {
+  margin: 10px 0;
+  width: 60%;
+  border: 1px solid #6666;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.twitter-share-button {
+  text-decoration: none;
+  font-size: 20px;
+  background-color: var(--primary-colour);
+  padding: 10px;
+  color: var(--secondary-colour);
+  border-radius: 4px;
+}
+
+.buttons button {
+  cursor: pointer;
+  border: none;
+  color: var(--secondary-colour);
+  font-size: 20px;
+  font-weight: 700;
+  background-color: var(--primary-colour);
+  padding: 10px;
+  border-radius: 4px;
+}
